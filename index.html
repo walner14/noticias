@@ -1,187 +1,250 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Pagina de Noticias</title>
-    <style>
-        body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0077b6;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav ul {
-            background-color: #023e8a;
-            list-style-type: none;
-            margin: 0;
-            padding: 10px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 20px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-        }
-        article {
-            background-color: #e0f7fa;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #333;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        footer {
-            background-color: #0077b6;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Noticias República Dominicana</h1>
-    </header>
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Página de noticias actualizadas de República Dominicana. Política, economía, turismo y más.">
+  <meta name="keywords" content="noticias, República Dominicana, política, economía, turismo, deportes">
+  <title>Mi Pagina de Noticias</title>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Íconos opcionales -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <section>
-        <h2>Noticias destacadas</h2>
-        <article>
-            <h3>Actualidad en la República Dominicana</h3>
-            <p><strong>La situación política</strong> se ha mantenido estable aunque con algunas tensiones recientes. <em>Analistas locales</em> recomiendan prestar atención a las próximas elecciones municipales.</p>
-            <blockquote>"La democracia dominicana está en una etapa clave de consolidación."</blockquote>
-            <p><mark>Fecha: 06 de mayo de 2025</mark> | <small>Publicado por: Walner Sanchez</small></p>
-        </article>
+  <style>
+    :root {
+      --color-primario: #0077b6;
+      --color-secundario: #023e8a;
+      --color-fondo: #f0f8ff;
+      --fuente-principal: 'Roboto', sans-serif;
+    }
 
-        <article>
-            <h3>Economía</h3>
-            <p><b>El crecimiento económico</b> ha sido del 3.2% en el primer trimestre. El turismo sigue siendo <i>el motor principal</i> de la economía.</p>
-            <p>Expertos afirman que la inversión extranjera ha subido un <sup>10%</sup> respecto al año anterior.</p>
-            <p><mark>Fecha: 06 de mayo de 2025</mark> | <small>Publicado por: Walner Sanchez</small></p>
-        </article>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        <article>
-            <h3>Turismo</h3>
-            <p>Más de <strong>500 mil visitantes</strong> llegaron al país durante el mes de abril. Las playas del este y norte son las más visitadas.</p>
-            <p>Se <del>esperaban</del> <ins>superaron</ins> las cifras de ocupación hotelera.</p>
-            <p><mark>Fecha: 06 de mayo de 2025</mark> | <small>Publicado por: Walner Sanchez</small></p>
-        </article>
-    </section>
+    body {
+      font-family: var(--fuente-principal);
+      background-color: var(--color-fondo);
+      margin: 0;
+      padding: 0;
+    }
 
-    <hr>
+    header {
+      background-color: var(--color-primario);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
 
-    <section>
-        <h2>Deportes</h2>
-        <p><b>NBA</b>: Hoy se enfrentan los Celtics vs Heat y Lakers vs Nuggets.</p>
-        <p><i>MLB</i>: Ayer, los Yankees vencieron a los Red Sox con marcador de 6-3.</p>
-        <p><em>Fútbol mexicano</em>: América y Tigres empataron en un emocionante 2-2.</p>
-        <p><mark>Fecha: 06 de mayo de 2025</mark> | <small>Publicado por: Walner Sanchez</small></p>
-    </section>
+    nav ul {
+      background-color: var(--color-secundario);
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
 
-    <section>
-        <h2>Imágenes del día</h2>
-        <img src="https://www.es.amnesty.org/fileadmin/user_upload/Ucrania_305335.jpg" alt="Conflicto en Ucrania" width="600" height="400">
-    </section>
+    nav ul li {
+      margin: 0 20px;
+    }
 
-    <section>
-        <h2>Artículos recientes</h2>
-        <ul style="list-style-type: square;">
-            <li>Los hechos más relevantes que acontecieron en República Dominicana</li>
-            <li>La situación de las deportaciones masivas de indocumentados haitianos en R.D.</li>
-            <li>Los 5 teléfonos móviles mejor valorados en lo que va del año</li>
-        </ul>
-    </section>
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-    <section>
-        <h2>Datos relevantes</h2>
-        <table>
-            <tr>
-                <th>Fecha</th>
-                <th>Evento</th>
-                <th>Ubicación</th>
-            </tr>
-            <tr>
-                <td>03/05/2025</td>
-                <td>Protesta social</td>
-                <td>Santo Domingo</td>
-            </tr>
-            <tr>
-                <td>04/05/2025</td>
-                <td>Conferencia económica</td>
-                <td>Punta Cana</td>
-            </tr>
-        </table>
-    </section>
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: #90e0ef;
+    }
 
-    <section>
-        <h2>Glosario</h2>
-        <dl>
-            <dt>NBA</dt>
-            <dd>National Basketball Association</dd>
-            <dt>MLB</dt>
-            <dd>Major League Baseball</dd>
-        </dl>
-    </section>
+    section {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
 
-    <section>
-        <h2>Video Destacado</h2>
-        <p>Video sobre geopolítica y la guerra de Rusia y Ucrania</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z45TnEufKxo" frameborder="0" allowfullscreen></iframe>
-    </section>
+    @media screen and (max-width: 768px) {
+      section {
+        grid-template-columns: 1fr;
+      }
+    }
 
-    <section>
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br>
-            <label for="correo">Correo Electrónico:</label><br>
-            <input type="email" id="correo" name="correo"><br><br>
-            <input type="submit" value="Enviar">
-        </form>
+    article {
+      background-color: #e0f7fa;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
 
-        <h3>Nuestra ubicación</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7568.128910085018!2d-69.9902503658854!3d18.480739397600267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses-419!2sdo!4v1746584296981!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
 
-    <footer>
-        <p><a href="#">Volver al inicio</a></p>
-        <p>Todos los derechos reservados para Walner Sanchez - 2025</p>
-    </footer>
-</body>
+    table, th, td {
+      border: 1px solid #333;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    footer {
+      background-color: var(--color-primario);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    input[type="submit"] {
+      background-color: var(--color-primario);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: var(--color-secundario);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style> 
+</head> 
+<body> 
+
+  <header> 
+    <h1>Noticias República Dominicana</h1> 
+  </header> 
+
+  <nav> 
+    <ul> 
+      <li><a href="#">Inicio</a></li> 
+      <li><a href="#">Quiénes somos</a></li> 
+      <li><a href="#">Contacto</a></li> 
+    </ul> 
+  </nav> 
+
+  <!-- CONTENIDO -->
+  <section> 
+    <article>
+      <h2>Noticias destacadas</h2>
+      <h3>Actualidad en la República Dominicana</h3> 
+      <p><strong>La situación política</strong> se ha mantenido estable aunque con algunas tensiones recientes.</p>
+      <blockquote>"La democracia dominicana está en una etapa clave de consolidación."</blockquote> 
+      <p><mark>Fecha: 06 de mayo de 2025</mark> | <small>Publicado por: Walner Sanchez</small></p>
+    </article> 
+
+    <article>
+      <h3>Economía</h3> 
+      <p><b>El crecimiento económico</b> ha sido del 3.2% en el primer trimestre.</p>
+      <p><mark>Fecha: 06 de mayo de 2025</mark> | <small>Publicado por: Walner Sanchez</small></p> 
+    </article> 
+
+    <article>
+      <h3>Turismo</h3> 
+      <p>Más de <strong>500 mil visitantes</strong> llegaron al país durante abril.</p>
+      <p><mark>Fecha: 06 de mayo de 2025</mark> | <small>Publicado por: Walner Sanchez</small></p> 
+    </article> 
+
+    <article>
+      <h2>Deportes</h2>
+      <p><b>NBA:</b> Celtics vs Heat y Lakers vs Nuggets.</p>
+      <p><i>MLB:</i> Yankees vencieron a los Red Sox 6-3.</p>
+      <p><mark>Fecha: 06 de mayo de 2025</mark> | <small>Publicado por: Walner Sanchez</small></p> 
+    </article> 
+  </section> 
+
+  <section>
+    <h2>Imágenes del día</h2> 
+    <img src="https://www.es.amnesty.org/fileadmin/user_upload/Ucrania_305335.jpg" alt="Conflicto en Ucrania">
+  </section> 
+
+  <section>
+    <h2>Artículos recientes</h2> 
+    <ul style="list-style-type: square;"> 
+      <li>Hechos relevantes en República Dominicana</li> 
+      <li>Deportaciones masivas de haitianos</li> 
+      <li>Top 5 teléfonos móviles 2025</li> 
+    </ul> 
+  </section> 
+
+  <section> 
+    <h2>Datos relevantes</h2> 
+    <table> 
+      <tr> 
+        <th>Fecha</th> 
+        <th>Evento</th> 
+        <th>Ubicación</th> 
+      </tr> 
+      <tr> 
+        <td>03/05/2025</td> 
+        <td>Protesta social</td> 
+        <td>Santo Domingo</td> 
+      </tr> 
+      <tr> 
+        <td>04/05/2025</td> 
+        <td>Conferencia económica</td> 
+        <td>Punta Cana</td> 
+      </tr> 
+    </table> 
+  </section> 
+
+  <section> 
+    <h2>Glosario</h2> 
+    <dl> 
+      <dt>NBA</dt> 
+      <dd>National Basketball Association</dd> 
+      <dt>MLB</dt> 
+      <dd>Major League Baseball</dd> 
+    </dl> 
+  </section> 
+
+  <section>
+    <h2>Video Destacado</h2> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/z45TnEufKxo" frameborder="0" allowfullscreen></iframe> 
+  </section> 
+
+  <section>
+    <h2>Contacto</h2> 
+    <form action="#" method="post"> 
+      <label for="nombre">Nombre:</label><br> 
+      <input type="text" id="nombre" name="nombre"><br> 
+      <label for="correo">Correo Electrónico:</label><br> 
+      <input type="email" id="correo" name="correo"><br><br> 
+      <input type="submit" value="Enviar"> 
+    </form> 
+
+    <h3>Nuestra ubicación</h3> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7568.128910085018!2d-69.9902503658854!3d18.480739397600267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses-419!2sdo!4v1746584296981!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+  </section> 
+
+  <footer> 
+    <p><a href="#">Volver al inicio</a></p> 
+    <p>Todos los derechos reservados para Walner Sanchez - 2025</p> 
+  </footer> 
+
+</body> 
 </html>
